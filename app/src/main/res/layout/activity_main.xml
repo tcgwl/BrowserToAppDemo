@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <Button
+        android:id="@+id/btn_to_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickMeToSecond"
+        android:text="启动SecondActivity"/>
+
+    <Button
+        android:id="@+id/btn_to_third"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_to_second"
+        android:onClick="clickMeToThird"
+        android:text="启动ThirdActivity"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is MainActivity."
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
