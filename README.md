@@ -5,7 +5,7 @@
 - 通过 Splash 页面做过渡，使用 Intent.FLAG_ACTIVITY_NEW_TASK 的方式启动浏览器唤起的页面，使得按返回键能接着显示本地应用中已打开的页面。
 - 通过判断 Activity 的数量，决定是直接唤起页面，还是先唤起主界面再打开需要唤起的页面，使得按返回键不至于直接从二级或者三级界面退出本地应用，以提高用户体验。  
 
-### 代码部分
+### 代码说明
 ```
 //SplashActivity.java->onCreate
 final Intent intent = getIntent();
